@@ -1,0 +1,12 @@
+<br>
+<div class="container">
+  <div class="logo"><%= link_to "Wikimous", articles_path %></div>
+  <div class="new"><%= link_to "New article", new_article_path %></div>
+</div>
+
+<ul>
+  <% @articles.each do |article| %>
+    <li><%= article.title %></li>
+    <li><%= article.content %></li>
+  <% end %>
+</ul>
